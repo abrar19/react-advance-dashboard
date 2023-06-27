@@ -12,23 +12,28 @@ const Navbar = () => {
                 </div>
                 <div className="items">
                     <div className="item">
-                        <LanguageOutlined />
+                        <LanguageOutlined className='icon'/>
                         English
                     </div>
                     <div className="item">
-                        <DarkModeOutlined />
+                        <DarkModeOutlined className='icon'/>
                     </div>
                     <div className="item">
-                        <FullscreenExitOutlined />
+                        <FullscreenExitOutlined className='icon'/>
                     </div>
                     <div className="item">
-                        <NotificationsNoneOutlined />
+                        <NotificationsNoneOutlined className='icon'/>
+                        <div className="counter">1</div>
                     </div>
                     <div className="item">
-                        <ChatBubbleOutlineOutlined />
+                        <ChatBubbleOutlineOutlined className='icon'/>
+                        <div className="counter">1</div>
                     </div>
                     <div className="item">
-                        <ListOutlined />
+                        <ListOutlined className='icon'/>
+                    </div>
+                    <div className="item">
+                        <img src="https://images.pexels.com/photos/16619473/pexels-photo-16619473/free-photo-of-city-road-landscape-people.jpeg" alt="" className="avatar" />
                     </div>
                 </div>
             </div>

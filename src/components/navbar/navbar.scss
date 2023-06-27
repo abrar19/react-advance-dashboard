@@ -38,9 +38,37 @@
             .item{
                 display: flex;
                 align-items: center;
+                position: relative;
 
                 &:first-child{
                     gap: 5px;
+                }
+
+                .icon{
+                    font-size: 20px;
+                }
+
+                .counter{
+                    background-color: red;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 10px;
+                    font-weight: bold;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+
+                }
+
+                .avatar{
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
                 }
             }
         }
