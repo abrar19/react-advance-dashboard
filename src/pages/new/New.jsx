@@ -1,10 +1,16 @@
 import React from 'react';
 import './new.scss'
+import Sidebar from '../../components/sidebar/Sidebar';
+import Navbar from '../../components/navbar/Navbar';
 
 const New = () => {
     return (
         <div className='new'>
-            New
+            <Sidebar />
+            <div className="newContainer">
+                <Navbar />
+                test
+            </div>
         </div>
     );
 }
