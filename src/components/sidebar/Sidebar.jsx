@@ -1,26 +1,33 @@
 import React from 'react';
 import './sidebar.scss'
 import {Dashboard, Person, Store, ShoppingCart, DeliveryDining, Assessment, Notifications, Book, DesktopWindows, Settings, AccountCircle, Logout} from '@mui/icons-material'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
     return (
         <div className='sidebar'>
-            <div className="top"> 
-                <span className="logo">abraradmin</span>
+            <div className="top">
+                <Link to='/' style={{textDecoration: 'none'}}>
+                    <span className="logo">abraradmin</span>
+                </Link> 
             </div>
             <hr />
             <div className="center">
                 <ul>
                     <p className="title">MAIN</p>
-                    <li>
-                        <Dashboard className='icon'/>
-                        <span>Dashboard</span>
-                    </li>
+                    <Link to='/' style={{textDecoration: 'none'}}>
+                        <li>
+                            <Dashboard className='icon'/>
+                            <span>Dashboard</span>
+                        </li>
+                    </Link>    
                     <p className="title">LISTS</p>
-                    <li>
-                        <Person className='icon'/>
-                        <span>Users</span>
-                    </li>
+                    <Link to='/users' style={{textDecoration: 'none'}}>   
+                        <li>
+                            <Person className='icon'/>
+                            <span>Users</span>
+                        </li>
+                    </Link>
                     <li>
                         <Store className='icon'/>
                         <span>Products</span>
